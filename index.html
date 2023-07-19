@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <style>
+      /* CSS styling for the Tic Tac Toe web app */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .board-sect {
+        margin-bottom: 20px;
+      }
+
+      .board-sect button {
+        margin-bottom: 10px;
+      }
+
+      .board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2px;
+        width: 200px;
+        height: 200px;
+        background-color: #fff;
+      }
+
+      .board div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .board div:hover {
+        background-color: #e0e0e0;
+      }
+
+      .score-sect {
+        text-align: center;
+      }
+
+      .score-title {
+        margin-bottom: 10px;
+      }
+
+      .score-board {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        margin: 0 auto;
+      }
+
+      .score-box {
+        background-color: #f1f1f1;
+        padding: 10px;
+        width: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Tic Tac Toe</h1>
+    </header>
+    <main>
+      <section class="board-sect">
+        <button>New Game</button>
+        <div class="board">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+      <section class="score-sect">
+        <div class="score-title">Round #:</div>
+        <div class="score-board">
+          <div class="score-box">
+            <h3>You</h3>
+            <div class="score">0</div>
+          </div>
+          <div class="score-box">
+            <h3>Machine</h3>
+            <div class="score">0</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- Footer content goes here -->
+    </footer>
+  </body>
+</html>
